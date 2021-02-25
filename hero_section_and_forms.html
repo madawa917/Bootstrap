@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>Document</title>
+</head>
+<body>
+	
+    <div class="container mt-4 mb-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello Madawa</h1>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, pariatur?</p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam commodi voluptatibus reiciendis consequuntur, quam iste incidunt aperiam corporis vitae necessitatibus.</p>
+            <a href="#" class="btn btn-primary btn-lg">Update</a>
+        </div>
+    </div>
+
+    <div class="container mt-3 mb-5">
+        <form action="">
+            <div class="form-group">
+                <label for="inputemail">Your Email Address</label>
+                <input type="email" class="form-control" id="inputemail"
+                 placeholder="example@gmail.com" aria-describedby="emailhelp" >
+                 <small class="form-text text-muted" id="emailhelp">We'll never share your email with anyone else.</small>
+
+            </div>
+            <div class="form-group">
+                <label for="inputpassword">Password</label>
+                <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+            </div>
+
+            <div class="row mt-4 mb-3">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control"
+                    placeholder="first Name" >
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control"
+                    placeholder="Last Name"  >
+                </div>
+            </div> 
+            
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="exampleFormControlSelect1">Gender</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option selected>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                      <option>Frefer not to say</option>                  
+                    </select>
+                  </div>
+
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Aggree to the terms and conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+
+            
+
+
+        </form>
+        
+      
+        <br><br><br>
+
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+
+    </div>
+
+
+	<!-- JavaScript -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
